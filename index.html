@@ -12,10 +12,10 @@
     <p>Please fill out this form with the required information</p>
     <form action='https://register-demo.freecodecamp.org'>
     <fieldset>
-        <label for="">Enter your first name: <input type="text"></label>
-        <label for="">Enter your last name: <input type="text"></label>
-        <label for="">Enter your email: <input type="email"></label>
-        <label for="">Create a new password: <input type="password"></label>
+        <label for="">Enter your first name: <input type="text" required></label>
+        <label for="">Enter your last name: <input type="text" required></label>
+        <label for="">Enter your email: <input type="email" required></label>
+        <label for="">Create a new password: <input type="password" pattern="[a-z0-5]{8,}" required></label>
     </fieldset>
 
 
