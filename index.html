@@ -12,17 +12,32 @@
     <p>Please fill out this form with the required information</p>
     <form action='https://register-demo.freecodecamp.org'>
     <fieldset>
-        <label for="">Enter your first name: <input type="text" required></label>
-        <label for="">Enter your last name: <input type="text" required></label>
-        <label for="">Enter your email: <input type="email" required></label>
-        <label for="">Create a new password: <input type="password" pattern="[a-z0-5]{8,}" required></label>
+        <label>Enter your first name: <input name="first-name" type="text" required></label>
+        <label>Enter your last name: <input name="last-name" type="text" required></label>
+        <label>Enter your email: <input name="email" type="email" required></label>
+        <label>Create a new password: <input name="password" type="password" pattern="[a-z0-5]{8,}" required></label>
     </fieldset>
     <fieldset>
         <label><input type="radio" name="account-type"> Personal Account</label>
         <label><input type="radio" name="account-type"> Business Account</label>
-        <label><input type="checkbox" required> I accept the <a href="terms.html">Terms and Conditions</a></label>
+        <label><input name="accepted-terms" type="checkbox" required> I accept the <a href="terms.html">Terms and Conditions</a></label>
     </fieldset>
-    <fieldset></fieldset>
+    <fieldset>
+        <label>Upload a profile picture: <input name="prof-picture" type="file"></label>
+        <label>Input your age (years): <input name="age" type="number" min="13" max="120"></label>
+        <label>How did you hear about us?
+            <select name="media">
+                <option value="">(select one)</option>
+                <option value="1">nameOfCompany News</option>
+                <option value="2">nameOfCompany YouTube Channel</option>
+                <option value="3">nameOfCompany Forum</option>
+                <option value="4">Other</option>
+            </select>
+        </label>
+        <label>Provide a bio:
+            <textarea name="biography" cols="30" rows="3" placeholder="I like coding on the beach..."></textarea>
+        </label>
+    </fieldset>
     <input type="submit" value="Submit">
 </body>
 </html>
